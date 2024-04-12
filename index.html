@@ -1,16 +1,13 @@
 <!doctype html>
 <style>
-iframe {
-  width: 100%;
-  height: 1000px;
-  border: 0;
-}
-.zoom {
-  -webkit-transform: scale(2); /* Safari and Chrome */ 
-  transform: scale(2); /* zoom factor - prefix if needed */
-  width: 100%; /* half of iframe width */
-  height: 1000px; /* half of iframe height */
-  overflow: hidden; /* remove big-ass scrollbars */
+#iframe {
+    zoom: 0.15;
+    -moz-transform:scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
 }
 html {
   height: 100%;
@@ -31,7 +28,7 @@ body {
     <meta name="keywords" content="Cross-chain crypto swap, Decentralized exchange (DEX), Blockchain interoperability, Cryptocurrency exchange, Bitcoin swap">
   </head>
   <body>
-<iframe class="zoom" name="SimpleSwap Widget" width="100%" max-width="100%" height="1000px" min-height="1000px" src="https://simpleswap.io/widget/1d2183f1-c49d-406b-aef1-393cd1046c65" frameborder="0"></iframe>
+<iframe name="SimpleSwap Widget" width="100%" max-width="100%" height="1000px" min-height="1000px" src="https://simpleswap.io/widget/1d2183f1-c49d-406b-aef1-393cd1046c65" frameborder="0"></iframe>
 <br>
 <br>
 <br>

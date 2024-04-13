@@ -11,13 +11,19 @@
     margin: 0px;
     font-family: Roboto, sans-serif;
     overflow-x: hidden;
-    position: relative;
-    max-width: 100% !important;
+    position: absolute;
   }
   
 </style>
 <html>
   <head>
+    <script>
+         window.onload = function() {
+            var iframe = document.getElementById("frame");
+            iframe.width = iframe.contentWindow.document.body.scrollWidth;
+            iframe.height = iframe.contentWindow.document.body.scrollHeight;
+         }
+    </script>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://simpleswap.io/favicon.ico">
     <title>SimpleSwap.me: Your Gateway to Seamless Cross-Chain Crypto Swaps</title>
@@ -26,7 +32,7 @@
     <meta name="keywords" content="Cross-chain crypto swap, Decentralized exchange (DEX), Blockchain interoperability, Cryptocurrency exchange, Bitcoin swap">
   </head>
   <body>
-<iframe name="SimpleSwap Widget" src="https://simpleswap.io/widget/1d2183f1-c49d-406b-aef1-393cd1046c65" width="100%" height="100px" frameborder="0"></iframe>
+<iframe id="frame" src="https://simpleswap.io/widget/1d2183f1-c49d-406b-aef1-393cd1046c65"></iframe>
 <br>
 <br>
 <br>
